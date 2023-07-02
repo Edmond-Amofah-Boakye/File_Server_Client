@@ -1,0 +1,79 @@
+.back-arrow{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.add-file-header{
+    text-align: center;
+    margin-top: 2.5rem ;
+    font-weight: 600;
+    color: rgb(35, 34, 34);
+}
+.add-all-files form{
+    width: 40rem;
+    margin: 2rem auto;
+}
+
+
+.add-all-files input{
+    width: 100%;
+    padding: 1.2rem 0;
+    margin-bottom: 1rem;
+}
+
+.add-all-files select{
+    width: 100%;
+    padding: 1.2rem 0;
+    margin-bottom: 1rem;
+}
+
+.add-all-files button{
+    margin-top: 1rem;
+    padding: 0.6rem 0;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.selcet-file{
+    background-color: rgb(209, 209, 209);
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.add-all-files button:hover{
+    background-color: rgb(7, 7, 98);
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+
+@media (max-width: 767px) {
+    .add-all-files form{
+        width: 30rem;
+    }
+}
+
+
+@media (max-width: 555px) {
+    .add-all-files form{
+        width: 25rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .add-all-files form{
+        width: 18rem;
+    }
+}

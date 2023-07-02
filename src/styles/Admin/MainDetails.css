@@ -1,0 +1,78 @@
+.dashboard-indicator{
+    padding: 1.2rem;
+}
+
+.home-icon{
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: blue;
+}
+.dashboard-indicator span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+/* Card wrapper */
+.card-wrapper{
+    color: rgb(222, 222, 222);
+    /* margin: 1rem 0.9rem; */
+    /* width: 21rem !important; */
+    padding: 1.6rem !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Card wrapper */
+
+.card-wrapper:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.files{
+    background: #43cea2;  
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  
+    background: linear-gradient(to right, #185a9d, #43cea2); 
+}
+
+.categories{
+    background: #D38312;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.users{
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.file-stats{
+    margin-top: 2.5rem;
+}
+
+.file-stats p{
+    font-size: 1.1rem;
+}
+
+.card-icon{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.no-files h5{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}

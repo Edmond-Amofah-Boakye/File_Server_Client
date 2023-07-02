@@ -1,0 +1,68 @@
+
+.user-header{
+    background-color: rgb(27, 37, 220);
+    padding: 1.2rem 0.8rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.user{
+    margin-bottom: 4rem;
+}
+
+.records{
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.records span{
+    color: rgb(232, 47, 15);
+}
+
+
+.user button{
+    float: right;
+    padding: 0.6rem 0.8rem;
+    background-color: rgb(240, 41, 6);
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+
+}
+
+/* File styles */
+.file-header{
+    background-color: rgb(30, 20, 229);
+    padding: 1.2rem 0.8rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.overview .feeds-row-1{
+    margin-bottom: 2rem;
+}
+
+.action-icon{
+    height: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.statistics-icon{
+    height: 20px;
+    width: 20px;
+    color: brown;
+}
+
+.action-delete, .action-send{
+    color: rgb(240, 41, 6);
+}
+.action-edit, .action-view{
+    color: rgb(30, 20, 229);
+}
+
+
+
+
+
+

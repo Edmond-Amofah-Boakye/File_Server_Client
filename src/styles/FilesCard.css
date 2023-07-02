@@ -1,0 +1,99 @@
+.file-card {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+.file-card:hover {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+
+.file-card-header{
+    font-size: 1.3rem;
+    padding-top: 1rem !important;
+    background-color: white !important;
+}
+.icons {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.ic {
+  margin: 0 1rem;
+}
+
+.share-btn, .download-btn{
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 0.4rem 0;
+    margin-bottom: 0.7rem;
+}
+
+.share-btn:hover{
+  background-color: rgb(40, 40, 171);
+}
+
+.download-btn{
+  background-color: rgb(176, 40, 40);
+}
+
+
+
+.all-files-icons {
+  text-align: center;
+}
+.file-audio-icon {
+  font-size: 1.6rem;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.share-icon{
+  color: red;
+}
+
+.view-icon{
+  color: #0112fc;
+}
+
+
+.pdf {
+  color: red;
+}
+
+.image {
+  color: rgb(5, 5, 127);
+}
+
+.audio {
+  color: blue;
+}
+
+video {
+  color: #fc7e01;
+}

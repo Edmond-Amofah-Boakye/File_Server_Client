@@ -1,0 +1,45 @@
+
+.c-caption{
+    top: 15% !important;
+    text-align: center !important;
+ }
+ .c-caption h3{
+     font-size: 3rem !important;
+ }
+
+ .carousel-control-prev, .carousel-control-next{
+    top: 20% !important;
+ }
+ 
+ .ct::before{
+     content: "";
+     background-color: rgba(20, 20, 20, 0.493);
+     display: block;
+     position: absolute;
+     top: 0;
+     right:  0;
+     left: 0;
+     bottom: 0;
+ }
+
+ .ct img{
+     height: 550px;
+     object-fit: cover;
+ }
+ .c-msg{
+     margin-top: 1.4rem;
+ }
+   
+    .read{
+     padding: 0.6rem 1.2rem;
+     background-color: rgb(33, 10, 243);
+     color: rgba(245, 243, 243, 0.891);
+     border: none !important;
+ }
+
+ 
+ @media (max-width: 1000px) {
+    .c-caption h3{
+        font-size: 2.3rem !important;
+    }
+}

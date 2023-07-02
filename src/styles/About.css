@@ -1,0 +1,95 @@
+.about-us-wrapper{
+    background-color: rgb(242, 240, 240);
+    padding: 3rem 0;
+}
+
+.about-us-head{
+    font-size: 1.1rem;
+    color: rgba(74, 72, 72, 0.951);
+}
+
+.info{
+    margin-bottom: 7rem;
+}
+
+.info h1{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.info p{
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+.info button{
+    padding: 0.6rem 2.5rem;
+    background-color: rgb(33, 10, 243);
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.about-us-image img{
+    width: 100%;
+    object-fit: cover;
+   
+}
+
+.share-download-msg h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.message li{
+    margin-bottom: 1rem;
+    list-style-type: circle;
+    font-size: 1.1rem;
+}
+
+.share-download-list li{
+    margin-bottom: 1rem;
+    /* list-style-type:armenian; */
+    font-size: 1.1rem;
+    margin-left: 1.4rem;
+}
+
+@media (max-width: 767px) {
+    .info{
+        margin-bottom: 3rem !important;
+    }
+    .about-us-image{
+        margin-top: 4rem;
+    }
+
+    .about-us-image img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+
+.share-download-msg, .share-download-list{
+    margin-bottom: 3rem;
+}
+
+.share-download-list li{
+    background-color: blue;
+    color: white;
+    font-size: 1.5rem;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 1rem;
+}
+
+.main-message{
+    margin-top: 2rem;
+    margin-bottom: 2rem !important;
+}
+
+}

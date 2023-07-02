@@ -1,0 +1,81 @@
+.main-wrapper{
+    position: relative;
+    left: 250px;
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.main-header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    z-index: 10;
+}
+
+.menu--search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon{
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 1.5rem;
+}
+
+.search-input{
+    position: relative;
+    margin-left: 1.2rem;
+}
+
+.search-input input{
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.search-input-icon{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 8px;
+    left: 190px;
+}
+
+.logout-icon{
+    padding-right: 3rem !important;
+}
+.logout{
+    color: rgba(255, 0, 0, 0.988);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.main-wrapper .sidebar-profile{
+    margin-right: 1.5rem;
+}
+
+.main-wrapper .sidebar-profile h4 {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    line-height: 3rem;
+}
+
+
+

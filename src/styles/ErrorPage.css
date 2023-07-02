@@ -1,0 +1,59 @@
+.error-wrapper{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.error-message{
+    flex-basis: 40%;
+    padding: 0 2rem;
+}
+
+.error-image{
+    flex-basis: 30%;
+}
+
+.error-image img{
+    object-fit: cover;
+}
+
+.error-message h1{
+    font-weight: bolder;
+    color: rgba(254, 6, 26, 0.947);
+    margin-bottom: 1.3rem;
+    font-size:3rem;
+}
+
+.error-message p{
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+}
+
+.error-message button{
+    padding: 1rem 3rem;
+    background-color: rgb(8, 8, 230);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.error-message button:hover{
+    background-color: rgb(242, 11, 11);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.error-message button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}

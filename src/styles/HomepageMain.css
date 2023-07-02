@@ -1,0 +1,62 @@
+
+.homepage{
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 7rem;
+}
+
+.homepage h1{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.homepage p{
+    margin-bottom: 1rem;
+}
+
+.homepage button{
+    padding: 1rem 2.5rem;
+    background-color: #0E4BF1;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+
+
+.file-types{
+    background-color: #2E3E4E;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.video-icon{
+    margin-bottom: 1rem;
+}
+
+.video-icon img{
+ width: 90px;
+ height: 90px;
+ border-radius: 45px;
+ -webkit-border-radius: 45px;
+ -moz-border-radius: 45px;
+ -ms-border-radius: 45px;
+ -o-border-radius: 45px;
+}
+
+.videos-icon-info{
+    border-bottom: 2px solid white;
+    padding: 2rem 0;
+}
+
+@media (max-width: 1000px) {
+    .videos-icon-info{
+        border-bottom: 2px solid white;
+        padding: 2rem 0;
+    }
+    .audio-info{
+        border-bottom: none;
+    }
+}
