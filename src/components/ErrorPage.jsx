@@ -1,5 +1,8 @@
 import errorImage from '../assets/404-error.avif'
 import '../styles/ErrorPage.css'
+import { Link } from 'react-router-dom'
+
+
 const ErrorPage = () => {
   return (
     <>
@@ -10,7 +13,7 @@ const ErrorPage = () => {
                     adipisicing elit. Cumque, delectus amet? Fugit suscipit 
                     cum atque aliquid, esse blanditiis odio neque.
                 </p>
-                <button><a href="/signin">Go Back</a></button>
+                <button><Link to="/signin">Go Back</Link></button>
             </div>
             <div className="error-image">
                 <img src={errorImage} alt="error-image" />
