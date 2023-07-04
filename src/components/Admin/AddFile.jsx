@@ -10,7 +10,10 @@ import "../../styles/Admin/AddFiles.css";
 
 const AddFile = () => {
   const { getFiles, setGetFiles } = useContext(Context)
-
+   //configuration
+   const config = {headers:{
+    "Authorization": `Bearer ${localStorage.getItem("token")}`
+  }}
   const [selectFile, setSelectFile] = useState("");
   const [title, setTitle] = useState("");
   const [file, setFile] = useState("");
@@ -27,7 +30,7 @@ const AddFile = () => {
     formData.append("file", file)
 
     try {
-      axios.post(`${server}/file/create`, formData, {withCredentials: true}).then((res)=>{
+      axios.post(`${server}/file/create`, formData, config).then((res)=>{
         swal.fire({
           icon: "success",
           title: `${res.data.message}`,
