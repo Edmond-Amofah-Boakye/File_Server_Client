@@ -13,7 +13,10 @@ import "../../styles/Admin/AddFiles.css";
 
 const AddFile = () => {
   const { id } = useParams()
-  const config = { withCredentials: true };
+   //configuration
+ const config = {headers:{
+  "Authorization": `Bearer ${localStorage.getItem("token")}`
+}} };
 
   const [selectFile, setSelectFile] = useState("");
   const [title, setTitle] = useState("");
