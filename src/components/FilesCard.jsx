@@ -11,7 +11,10 @@ import axios from "axios";
 
 const FilesCard = ({ files }) => {
 
-  const config = {withCredentials: true}
+ //configuration
+ const config = {headers:{
+  "Authorization": `Bearer ${localStorage.getItem("token")}`
+}}
   
   //handle file dowmload
   const handleDownload = (filename) =>{
