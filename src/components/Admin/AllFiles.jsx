@@ -18,7 +18,10 @@ import "../../styles/Admin/Users.css";
 
 const AllFiles = () => {
   const { getFiles, search, setGetFiles } = useContext(Context);
-
+  //configuration
+   const config = {headers:{
+    "Authorization": `Bearer ${localStorage.getItem("token")}`
+  }}
   //handle file preview
   const handlePreview = (filename) => {
     fetch(`${server}/file/preview/${filename}`)
@@ -50,7 +53,7 @@ const AllFiles = () => {
       .then((result) => {
         if (result.isConfirmed) {
           axios
-            .delete(`${server}/file/${id}`, { withCredentials: true })
+            .delete(`${server}/file/${id}`, config)
             .then(() => {
               swal.fire({
                 icon: "success",
