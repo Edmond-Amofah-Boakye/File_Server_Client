@@ -9,7 +9,10 @@ import server from "../Helpers/Server";
 
 const Users = () => {
   const { getUsers, setGetUsers } = useContext(Context);
-
+   //configuration
+ const config = {headers:{
+  "Authorization": `Bearer ${localStorage.getItem("token")}`
+}}
   //handle delete
   const handleDelete = (id) => {
     swal
@@ -27,7 +30,7 @@ const Users = () => {
       .then((result) => {
         if (result.isConfirmed) {
           axios
-            .delete(`${server}/user/${id}`, { withCredentials: true })
+            .delete(`${server}/user/${id}`, config)
             .then(() => {
               swal.fire({
                 icon: "success",
