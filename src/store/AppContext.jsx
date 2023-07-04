@@ -15,8 +15,11 @@ const AppContext = ({ children }) => {
   const [getUsers, setGetUsers] = useState([]);
   const [getFiles, setGetFiles] = useState([]);
 
- //configuration to use cookies
-  const config = {withCredentials: true}
+ //configuration
+ const config = {headers:{
+  "Authorization": `Bearer ${localStorage.getItem("token")}`
+}}
+
 
   useEffect(() => {
    axios.get(`${server}/auth/me`, config)
