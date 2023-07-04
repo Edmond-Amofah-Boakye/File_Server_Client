@@ -4,10 +4,12 @@ import server from "../Helpers/Server";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import swal from "sweetalert2";
+import { useNavigate } from 'react-router-dom';
 import { AiOutlineFileImage } from "react-icons/ai";
 
 const Settings = () => {
-    //configuration
+const navigate = useNavigate();
+//configuration
  const config = {headers:{
   "Authorization": `Bearer ${localStorage.getItem("token")}`
 }}
@@ -43,6 +45,7 @@ const Settings = () => {
           icon: "success",
           title: `${res.data.message}`,
         });
+          navigate("/admin/dashboard/users")
       }).catch((error)=>{
         swal.fire({
           icon: "error",
