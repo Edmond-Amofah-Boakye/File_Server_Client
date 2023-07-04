@@ -7,7 +7,10 @@ import swal from "sweetalert2";
 import { AiOutlineFileImage } from "react-icons/ai";
 
 const Settings = () => {
-  const config = { withCredentials: true };
+    //configuration
+ const config = {headers:{
+  "Authorization": `Bearer ${localStorage.getItem("token")}`
+}}
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
