@@ -8,7 +8,10 @@ import { useState } from "react";
 const ResetPassword = () => {
   const navigate = useNavigate();
   const params = useParams();
-
+//configuration
+ const config = {headers:{
+  "Authorization": `Bearer ${localStorage.getItem("token")}`
+}}
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const data = {
@@ -24,9 +27,7 @@ const ResetPassword = () => {
       });
     }
     axios
-      .post(`${server}/auth/password/reset/${params.token}`, data, {
-        withCredentials: true,
-      })
+      .post(`${server}/auth/password/reset/${params.token}`, data, config)
       .then((res) => {
         swal.fire({
           icon: "success",
