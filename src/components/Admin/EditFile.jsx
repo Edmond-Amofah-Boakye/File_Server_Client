@@ -16,7 +16,7 @@ const AddFile = () => {
    //configuration
  const config = {headers:{
   "Authorization": `Bearer ${localStorage.getItem("token")}`
-}} };
+}}
 
   const [selectFile, setSelectFile] = useState("");
   const [title, setTitle] = useState("");
