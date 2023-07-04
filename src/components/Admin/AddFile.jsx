@@ -42,12 +42,10 @@ const AddFile = () => {
       })
 
     } catch (error) {
-      console.log(error);
       swal.fire({
         icon: "error",
         title: `${error.response.data.message}`,
     })}}
-
   return (
     <>
       <Container className="add-all-files">
