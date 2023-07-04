@@ -10,15 +10,16 @@ import "../../styles/Admin/AddFiles.css";
 
 const AddFile = () => {
   const { getFiles, setGetFiles } = useContext(Context)
-   //configuration
-   const config = {headers:{
-    "Authorization": `Bearer ${localStorage.getItem("token")}`
-  }}
+  
   const [selectFile, setSelectFile] = useState("");
   const [title, setTitle] = useState("");
   const [file, setFile] = useState("");
   const [description, setDescription] = useState("");
 
+   //configuration
+   const config = {headers:{
+    "Authorization": `Bearer ${localStorage.getItem("token")}`
+  }}
 
   const handleSubmit = async (e) =>{
     e.preventDefault()
