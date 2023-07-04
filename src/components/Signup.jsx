@@ -27,8 +27,8 @@ const Signup = () => {
           icon: "success",
           title: `${res.data.message}`,
         });
-        setName(" ");
-        setEmail(" ");
+        setName("");
+        setEmail("");
         setPassword("");
       })
       .catch((error) => {
