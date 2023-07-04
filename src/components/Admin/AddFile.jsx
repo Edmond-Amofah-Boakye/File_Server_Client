@@ -2,13 +2,14 @@ import { useState, useContext } from "react";
 import { Context } from "../../store/AppContext";
 import { Container } from "react-bootstrap";
 import { AiOutlineArrowLeft, AiOutlineFileImage } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import server from '../Helpers/Server'
 import axios from 'axios'
 import swal from "sweetalert2";
 import "../../styles/Admin/AddFiles.css";
 
 const AddFile = () => {
+  const navigate = useNavigate();
   const { getFiles, setGetFiles } = useContext(Context)
   
   const [selectFile, setSelectFile] = useState("");
@@ -37,6 +38,7 @@ const AddFile = () => {
           title: `${res.data.message}`,
         })
         setGetFiles([...getFiles, res.data.createdFile])
+        navigate("/admin/dashboard/files")
       })
 
     } catch (error) {
