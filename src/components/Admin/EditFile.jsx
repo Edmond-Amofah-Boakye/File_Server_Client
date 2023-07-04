@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { AiOutlineArrowLeft, AiOutlineFileImage } from "react-icons/ai";
-import { Link, useParams} from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import server from '../Helpers/Server'
 import axios from 'axios'
 import swal from "sweetalert2";
@@ -13,6 +13,7 @@ import "../../styles/Admin/AddFiles.css";
 
 const AddFile = () => {
   const { id } = useParams()
+  const navigate = useNavigate();
    //configuration
  const config = {headers:{
   "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -53,6 +54,7 @@ const AddFile = () => {
           icon: "success",
           title: `${res.data.message}`,
         })
+        navigate("/admin/dashboard/files")
       }).catch((error)=>{
         swal.fire({
           icon: "error",
