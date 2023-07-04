@@ -6,7 +6,10 @@ import swal from "sweetalert2";
 
 const SendFile = () => {
   const { id } = useParams();
-  const config = { withCredentials: true };
+//configuration
+ const config = {headers:{
+  "Authorization": `Bearer ${localStorage.getItem("token")}`
+}}
 
   const [title, setTitle] = useState("");
   const [email, setEmail] = useState("");
