@@ -34,7 +34,7 @@ const Signin = () => {
         }, 1000);
         res.data.role === "admin"
           ? navigate("/admin/dashboard", {replace: true})
-          : navigate("/feeds", {replace: true});
+          : navigate("/", {replace: true});
       })
       .catch((error) => {
         swal.fire({
