@@ -7,9 +7,13 @@ import { useEffect } from 'react';
 const VerifyUser = () => {
     const navigate = useNavigate()
     const params = useParams()
+    //configuration
+   const config = {headers:{
+    "Authorization": `Bearer ${localStorage.getItem("token")}`
+  }}
   
     const verifyUser = async () =>{
-        axios.get(`${server}/auth/verify/email/${params.token}`, {withCredentials: true})
+        axios.get(`${server}/auth/verify/email/${params.token}`, config)
           .then((res)=>{
             swal.fire({
               icon: "success",
