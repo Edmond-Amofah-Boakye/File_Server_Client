@@ -20,9 +20,10 @@ const Signin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${server}/auth/login`, data, { withCredentials: true })
+      .post(`${server}/auth/login`, data)
       .then((res) => {
         localStorage.setItem("role", res.data.role)
+        localStorage.setItem("token", res.data.token)
         //delay for 2 seconds
         setTimeout(() => {
           swal.fire({
