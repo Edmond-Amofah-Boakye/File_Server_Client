@@ -8,6 +8,10 @@ import axios from "axios";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
+  //configuration
+   const config = {headers:{
+    "Authorization": `Bearer ${localStorage.getItem("token")}`
+  }}
   const data = {
     email,
   };
@@ -15,7 +19,7 @@ const ForgotPassword = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${server}/auth/password/forgot`, data, { withCredentials: true })
+      .post(`${server}/auth/password/forgot`, data, config)
       .then((res) => {
         swal.fire({
           icon: "success",
