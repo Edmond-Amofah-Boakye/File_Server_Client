@@ -34,7 +34,7 @@ const Signup = () => {
       .catch((error) => {
         swal.fire({
           icon: "error",
-          title: `${error.response.data.message}`,
+          title: 'error',
         });
         console.log(error);
       });
