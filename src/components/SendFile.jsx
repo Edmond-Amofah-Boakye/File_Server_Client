@@ -24,8 +24,8 @@ const SendFile = () => {
     axios
       .get(`${server}/file/${id}`, config)
       .then((res) => {
-        setTitle(res.data.file.title);
-        setFilename(res.data.file.file);
+       setTitle(res.data.file.title);
+        setFilename(res.data.file.filename);
       })
       .catch((error) => {
         console.log(error);
@@ -50,7 +50,7 @@ const handleSubmit = (e) =>{
     }).catch((error)=>{
       swal.fire({
         icon: "error",
-      title: `${error.response.data.message}`
+      title: `error`
       })
     })
 }
