@@ -47,8 +47,6 @@ const FilesCard = ({ files }) => {
       });
 
   }
-
-
   return (
     <Row>
       {files.map((el) => {
@@ -57,7 +55,7 @@ const FilesCard = ({ files }) => {
             <Card className="shadow card-wrapper ">
               <Card.Header className="file-card-header">{el.title}</Card.Header>
               <Card.Body>
-                <Card.Text className="all-files-icons" onClick={()=>handlePreview(el.file)}>
+                <Card.Text className="all-files-icons" onClick={()=>handlePreview(el.filename)}>
                   {viewIcon(el.type)}
                 </Card.Text>
                 <div className="mb-4">{el.description}</div>
@@ -67,7 +65,7 @@ const FilesCard = ({ files }) => {
                       Share File
                     </button>
                   </Link>
-                  <button className="download-btn  w-100" onClick={()=>handleDownload(el.file)}>
+                  <button className="download-btn  w-100" onClick={()=>handleDownload(el.filename)}>
                     Download
                   </button>
                 </div>
