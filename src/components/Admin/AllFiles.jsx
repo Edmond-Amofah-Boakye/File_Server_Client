@@ -138,7 +138,7 @@ const AllFiles = () => {
                       <td>
                         <AiFillEye
                           className="action-icon action-view"
-                          onClick={() => handlePreview(item.file)}
+                          onClick={() => handlePreview(item.filename)}
                         />
                       </td>
                       <td>
