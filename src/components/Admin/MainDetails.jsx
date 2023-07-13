@@ -4,6 +4,7 @@ import { HiUsers } from 'react-icons/hi'
 import { Context } from '../../store/AppContext'
 import { useContext } from 'react'
 import Chart from './LineChart'
+import { Link } from 'react-router-dom'
 
 const MainDetails = () => {
     const { getUsers, getFiles } = useContext(Context)
@@ -11,7 +12,9 @@ const MainDetails = () => {
     <div className="dash-content">
         <div className="overview">
             <div className="title">
-                <AiFillHome className="dashboard-icon"/>
+                <Link to='/'>
+                    <AiFillHome className="dashboard-icon"/>
+                </Link>
                 <span className="text">Dashboard</span>
             </div>
             <div className="boxes">
